@@ -10,7 +10,6 @@
 #include "stdafx.h"									//MFC标准头文件
 #include "CFactor.h"								//因子类头文件
 
-
 //名  称：		SetVariableIDs()
 //功  能：		设置变量ID列表
 //参  数：		vector<unsigned int>&
