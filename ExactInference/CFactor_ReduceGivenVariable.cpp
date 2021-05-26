@@ -21,6 +21,22 @@ void CFactor::ReduceGivenVariable(unsigned int nVariableID, unsigned int nValueI
 {
 	//////////////////////////////////////////
 	//函数3：因子化简。需要同学完成
-	// 
+	//cout << nVariableID;
+	//cout << nValueID;
+	for (unsigned int i = 0; i < m_VariableIDs.size(); i++) {
+		if (nVariableID == m_VariableIDs[i]) {
+			//当前因子就是需要化简的因子,需要去掉不符合的因子行
+			for (vector<FACTOR_ROW>::iterator it = m_FactorRows.begin(); it != m_FactorRows.end();) {
+				if ((*it).ValueIDs[i] != nValueID) {
+					//当前因子行不符合条件，去掉
+					it = m_FactorRows.erase(it);
+					if (it == m_FactorRows.end()) {
+						break;
+					}
+				}
+				else { it++; }
+			}
+		}
+	}
 	//////////////////////////////////////////
 }
