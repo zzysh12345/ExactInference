@@ -21,5 +21,6 @@ void CFactor::ReduceGivenVariable(unsigned int nVariableID, unsigned int nValueI
 {
 	//////////////////////////////////////////
 	//函数3：因子化简。需要同学完成
+	// 
 	//////////////////////////////////////////
 }

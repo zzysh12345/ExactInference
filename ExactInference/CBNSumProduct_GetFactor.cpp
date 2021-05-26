@@ -11,7 +11,7 @@
 
 
 //名  称：		GetFactor()
-//功  能：		计算因子的值
+//功  能：		计算因子的值，给定QueryVariables返回因子的值，注意当前节点的父节点都得在QueryVariables里
 //参  数：		unsigned int,unsigned int,vector<QUERY_VARIABLE>&
 //返回值：		无
 double CBNSumProduct::GetFactor(unsigned int nNodeID,						//节点ID

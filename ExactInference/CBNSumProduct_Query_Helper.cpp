@@ -20,6 +20,7 @@ void CBNSumProduct::Query_Helper(QUERY& query, vector<CFactor> Factors)
 	//////////////////////////////////////////////////////////////////////////////
 	//步骤1：根据给定变量、规约因子列表
 	//遍历所有给定变量ID
+	//注意这里Factors参数没有加&
 	for (unsigned int i = 0; i < query.GivenVariables.size(); i++)
 	{
 		//遍历所有因子

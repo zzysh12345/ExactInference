@@ -11,7 +11,7 @@
 
 
 //名  称：		Preprocess_BN()
-//功  能：		预处理贝叶斯网络结构与参数
+//功  能：		预处理贝叶斯网络结构与参数，初始化CPTRowIDs成员
 //参  数：		无
 //返回值：		无
 void CBNSumProduct::Preprocess_BN()
@@ -32,7 +32,7 @@ void CBNSumProduct::Preprocess_BN()
 }
 
 //名  称：		Arrange()
-//功  能：		对父节点的ID及其取值进行排列
+//功  能：		对父节点的ID及其取值进行排列，初始化CPTRowIDs成员
 //参  数：		unsigned int,vector<unsigned int>,vector<unsigned int>,unsigned int,unsigned int&
 //返回值：		无
 void CBNSumProduct::Arrange(unsigned int nNodeID,		//当前节点ID
