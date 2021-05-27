@@ -20,5 +20,12 @@ void CFactor::Normalize()
 {
 	////////////////////////////////////////////////////////////
 	//函数4：归一化因子。需要同学完成
+	double sum = 0;
+	for (unsigned int i = 0; i < m_FactorRows.size(); i++) {
+		sum += m_FactorRows[i].fValue;
+	}
+	for (unsigned int i = 0; i < m_FactorRows.size(); i++) {
+		m_FactorRows[i].fValue /= sum;
+	}
 	////////////////////////////////////////////////////////////
 }

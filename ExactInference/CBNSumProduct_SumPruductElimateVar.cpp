@@ -46,6 +46,7 @@ void CBNSumProduct::Sum_Product_Eliminate_Var(unsigned int nVariableID,vector<CF
 		}
 	}
 
+	//至此NewFactors中包含了所有包含需要消除变量的因子，OldFactors中的相关因子已被删除
 	//检查因子列表的大小
 	if (NewFactors.size() == 0)
 	{
@@ -53,6 +54,7 @@ void CBNSumProduct::Sum_Product_Eliminate_Var(unsigned int nVariableID,vector<CF
 		return;
 	}
 	else
+		//需要将NewFactors中的变成新的因子
 	{
 		//定义新的乘积因子PSAI
 		CFactor psai = NewFactors[0];
